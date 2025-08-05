@@ -1,8 +1,8 @@
 # Practice Run 1: Cleaning and Analyzing Multi-Family Permit Data (1980-2022) 
 
-Dataset: Residential Construction Permits by County 
-Data found through data.gov: https://catalog.data.gov/dataset/residential-construction-permits-by-county
-Download for Dataset: https://hudgis-hud.opendata.arcgis.com/datasets/da836467b4904711b14d74acbc4568be_24/about 
+- Dataset: Residential Construction Permits by County 
+- Data found through data.gov: https://catalog.data.gov/dataset/residential-construction-permits-by-county
+- Download for Dataset: https://hudgis-hud.opendata.arcgis.com/datasets/da836467b4904711b14d74acbc4568be_24/about 
 
 ### Documentation 
 I ensured that the dataset included multi-family, 5+ unit permits.
