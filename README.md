@@ -1,4 +1,9 @@
-# Practice Run 1: Cleaning and Analyzing Multi-Family Permit Data (1980-2022) 
+# Practice Run 1: Multi-Family Permit Identification in National Housing Data (1980–2022)
+This run was designed to review filtering and organizing already-formatted data using pandas
+
+Example Final: Filtered Dataset by 5+ Units and Displayed in Descending Order:
+<img width="1215" height="293" alt="final filtered cleaned dataset with 5+ units screenshot" src="https://github.com/user-attachments/assets/492c7da8-28dc-4f6e-9279-ed15679eae96" />
+
 
 - Dataset: Residential Construction Permits by County 
 - Data found through data.gov: https://catalog.data.gov/dataset/residential-construction-permits-by-county
@@ -14,7 +19,12 @@ Headers were cut and lowercased for easy use and organization, then the filtered
 - Missing values were imputed for some data points 
 - Because data was very easy to work with, I just needed to filter relevant data and sort it. I want to webscrape and analyze data that may not be so cleanly formatted for further practice. 
 
-# Practice Run 2: Data Retrieval + Cleaning on Gwinnett County's Permits Issued Data 12/30/2024 - 1/3/2025
+# Practice Run 2: Raw County PDF to Structured Permit Dataset (Gwinnett County, 2024)
+This practice run was designed to simulate retrieving permit data from official public sources, cleaning unstructured data, and isolating multi-family residential cases (5+ units) — key duties in the position.
+
+Example Final: Cleaned and Filtered Dataset by Townhouse Units 
+<img width="1137" height="426" alt="final cleaned and filtered by townhouse screenshot" src="https://github.com/user-attachments/assets/76a62a43-44a4-4061-88fa-024157b58505" />
+
 
 - Dataset: Permits Issued for Gwinnett County between 12/30/2024 - 1/3/2025
 - Data Source: https://www.gwinnettcounty.com/static/departments/planning/pdf/2025_activity/gwinnett-county-building-permits-12302024-01032025.pdf 
@@ -24,6 +34,7 @@ Parsing and cleaning data took the most effort for this practice run as data was
 pdfplumber (pdf equivalent of BS4) was used for converting pdf to raw text. I manually created headers for the data and spliced the relevant sections for each row entry. The list of each row is then converted to a pandas DataFrame and then filtering/organizing with pandas methods is possible.
 
 ### Notes
+- Manual work of parsing pdf data into usable dataframe can be automated using repeatable logic
 - Data was in pdf format
 - Blanks in data not imputted or dropped
 - Specifically if I were looking for permits for residential buildings with 5+ units, this was not the best data to use. There was a field for "NO. OF UNITS" in the data, but was blank for all cases. Instead, I had to find cases where the 'use' header was 'Townhouse'.
