@@ -7,7 +7,7 @@
 ### Documentation 
 I ensured that the dataset included multi-family, 5+ unit permits.
 The dataset was in csv format, and some data points were imputed, making it easy to use pandas methods to filter and organize relevant data. For now, I filtered just 1980-2022 data (most recent from this dataset) and looked for multi-family 5+ unit permits.
-Headers were cut and lowercased for easy use and organization, then the filtered data was organized by number of permits for 5+ units
+Headers were cut and lowercased for easy use and organization, then the filtered data was organized by number of permits for 5+ residential units. 
 
 ### Notes 
 - Data was in csv format
