@@ -1,4 +1,4 @@
-# Practice Run 1: Multi-Family Permit Identification in National Housing Data (1980–2022)
+# Practice Run 1: [Multi-Family Permit Identification in National Housing Data (1980–2022)](https://github.com/hran-8/data-cleaning-practice/blob/main/clean_data_sim/main.ipynb)
 This run was designed to review filtering and organizing already-formatted data using pandas
 
 Example Final: Filtered Dataset by 5+ Units and Displayed in Descending Order:
@@ -19,7 +19,7 @@ Headers were cut and lowercased for easy use and organization, then the filtered
 - Missing values were imputed for some data points 
 - Because data was very easy to work with, I just needed to filter relevant data and sort it. I want to webscrape and analyze data that may not be so cleanly formatted for further practice. 
 
-# Practice Run 2: Raw County PDF to Structured Permit Dataset (Gwinnett County, 2024)
+# Practice Run 2: [Raw County PDF to Structured Permit Dataset (Gwinnett County, 2024)](https://github.com/hran-8/data-cleaning-practice/blob/main/gwinnett_county_data_scrape/main.ipynb)
 This practice run was designed to simulate retrieving permit data from official public sources, cleaning unstructured data, and isolating multi-family residential cases (5+ units) — key duties in the position.
 
 Example Final: Cleaned and Filtered Dataset by Townhouse Units 
